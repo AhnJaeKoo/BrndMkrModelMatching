@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: brndMkrModelMatching
+  config:        import:    - "optional:configserver:http://192.168.213.82:8084/conf"
+    
+  #redis cache    
+  cache:
+    type: redis
+  redis:
+    host: 127.0.0.1
+    port: 6000
+        
+encrypt:
+  key: groupmatchingmsa # 암호화 키..application.yml에서는 구동시점 차이로 안된다.
+  
+server:
+  servlet:
+    context-path: /brndMkrModelMatching
