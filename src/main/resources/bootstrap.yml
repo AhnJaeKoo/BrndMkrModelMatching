@@ -1,7 +1,7 @@
 spring:
   application:
     name: brndMkrModelMatching
-  config:        import:    - "optional:configserver:http://192.168.213.82:8084/conf"
+  config:        import:    - "optional:configserver:http:///conf"
     
   #redis cache    
   cache:
